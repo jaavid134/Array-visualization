@@ -125,7 +125,7 @@ class MultiSTLViewer(QOpenGLWidget):
     # ------------------------------------------------------
     def draw_meshes(self):
         for m, color in zip(self.meshes, self.colors):
-            glColor3f(*color)
+            glColor3f(0.6, 0.8, 1.0)
             glBegin(GL_TRIANGLES)
             for tri in m.vectors:
                 # you can compute normals if needed; here we just draw
